@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>boot-hello</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--继承springboot的父项目-->
+    <!--用来管理 SpringBoot 的应用的版本-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <version>2.2.4.RELEASE</version>
+        <artifactId>spring-boot-starter-parent</artifactId>
+    </parent>
+
+    <!--web相关依赖-->
+    <!--没有设定版本号 使用父项目的版本号 导入依赖默认是不需要写版本号的-->
+    <!-- spring-boot-starter 以这三个单词开头的依赖称之为 starters（启动器）-->
+    <!--
+        Spring Boot将所有的功能场景都抽取出来，
+        做成一个个的starters（启动器），
+        只需要在项目里面引入这些starter相关场景的所有依赖都会导入进来。
+        要用什么功能就导入什么场景的启动器。
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
